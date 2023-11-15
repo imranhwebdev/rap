@@ -81,7 +81,6 @@ export default function Banner(){
            <div className="hero-section">
                 <video ref={videoRef} className="video video-bg" loop autoPlay>
                     <source src={BgVideo} type="video/mp4" />
-
                 </video>
                 <div className="controls">
                     <button onClick={toggleMute} className='soundOneOff'>
