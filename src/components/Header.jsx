@@ -1,30 +1,43 @@
 import { React } from 'react'
 import {Container} from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 export default function Header(){
-    
-         return(
+    const headerSocials = [
+        {
+            socialText:'Etherscan',
+            socialLink:'google.com'
+        },
+        {
+            socialText:'Dex Tools',
+            socialLink:'google.com'
+        },
+        {
+            socialText:'Use "Buy $RAP"',
+            socialLink:'google.com'
+        },
+        {
+            socialText:'Telegram',
+            socialLink:'google.com'
+        },
+        {
+            socialText:'Twitter',
+            socialLink:'google.com'
+        },
+    ]
+    return(
         <header className="heading">
-            <Navbar collapseOnSelect expand="xl">
+            <Navbar>
                 <Container>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <div className="header-right-area ms-auto">
-                            <div className="header-social-links">
-                            <Nav>
-                                    <ul>
-                                        <li><a href="/">Etherscan</a></li>
-                                        <li><a href="/">Dex Tools</a></li>
-                                        <li><a href="/">Buy $RAP</a></li>
-                                        <li><a href="/">Telegram</a></li>
-                                        <li><a href="/">Twitter</a></li>
-                                    </ul>
-                            </Nav>
-                            </div>
+                    <div className="header-right-area ms-auto">
+                        <div className="header-social-links">
+                            <ul>
+                                {headerSocials.map((headerSocial, index)=>(
+                                    <li key={index}><a href={headerSocial.socialLink}>{headerSocial.socialText}</a></li>
+                                ))}
+                            </ul>
                         </div>
-                    </Navbar.Collapse>
+                    </div>
                 </Container>
             </Navbar>
         </header>

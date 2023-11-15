@@ -4,6 +4,14 @@ import AboutImg from '../assets/img/about-img.jpg'
 function About() {
     const aboutTitle = "Refund Assets Possible!";
     const aboutSubContent = "Formation for the purpose of recovering after losses. Financial freedom is here, let the money work for you, not the other way around. ";
+    const aboutleftContentLinkText1 = "We formed a group at the latest Blockchain Life Dubai 2023.";
+    const aboutleftContentLinkLink1 = "https://google.com";
+    const aboutleftContentLinkText2 = "Let's get ready for financial independence and let's chase losses. ";
+    const aboutleftContentLinkLink2 = "https://google.com";
+    const aboutleftContentHeading = "Story about $RAP:";
+    const aboutleftContentDesc = "In the shadowy corners of the digital world, a tale unfolds, one that whispers of power, intrigue, and unfathomable wealth. This is the story of the Refund Assets Possible ($RAP) token, a mysterious cryptocurrency entwined with the enigma of Elon Musk and the fabled Illuminati.";
+    const aboutleftContentCh1T = "Chapter 1: The Genesis of RAP";
+    const aboutleftContentCh1D = "In a secret meeting room, where the world's elite converge, a plan is hatched. The Illuminati, known for their influence over global events, decide to create a digital asset unlike any other. They seek the genius of Elon Musk, a visionary known for revolutionizing industries. Together, they create the $RAP token, a cryptocurrency designed to not only accumulate wealth but also to bestow power upon its holders.";
     const aboutChapterContens = [
         {
             id:1,
@@ -28,15 +36,19 @@ function About() {
             <Row>
                 <Col lg={6}>
                     <div className="about__left_content">
-                        <h2>{aboutTitle}</h2>
-                        <p>{aboutSubContent}</p>
-                        <a href="/">We formed a group at the latest Blockchain Life Dubai 2023.</a>
-                        <a href="/">Let's get ready for financial independence and let's chase losses. </a>
-                        <h1>Story about $RAP:</h1>
-                        <p>In the shadowy corners of the digital world, a tale unfolds, one that whispers of power, intrigue, and unfathomable wealth. This is the story of the Refund Assets Possible ($RAP) token, a mysterious cryptocurrency entwined with the enigma of Elon Musk and the fabled Illuminati.</p>
+                       <div className="section__title">
+                            <h2>{aboutTitle}</h2>
+                            <p>{aboutSubContent}</p>
+                       </div>
+                        <div className="about__content_attr">
+                                <a target='__blank' href={aboutleftContentLinkLink1}>{aboutleftContentLinkText1}</a>
+                                <a target='__blank' href={aboutleftContentLinkLink2}>{aboutleftContentLinkText2}</a>
+                        </div>
+                        <h1>{aboutleftContentHeading}</h1>
+                        <p>{aboutleftContentDesc}</p>
                         <div className="chapter__content">
-                            <h5>Chapter 1: The Genesis of RAP</h5>
-                            <p>In a secret meeting room, where the world's elite converge, a plan is hatched. The Illuminati, known for their influence over global events, decide to create a digital asset unlike any other. They seek the genius of Elon Musk, a visionary known for revolutionizing industries. Together, they create the $RAP token, a cryptocurrency designed to not only accumulate wealth but also to bestow power upon its holders.</p>
+                            <h5>{aboutleftContentCh1T}</h5>
+                            <p>{aboutleftContentCh1D}</p>
                         </div>
                     </div>
                 </Col>

@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 160%;
     background: $black;
     color: $color__3;
 }
@@ -24,6 +24,15 @@ h6 {
 h3, h4, h5, h6{
     font-weight: 500;
 }
+
+h1{
+    @include font-40;
+}
+
+h2{
+    @include font-40;
+}
+
 p {
     margin: 0;
 }

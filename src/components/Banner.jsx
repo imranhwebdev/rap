@@ -75,7 +75,7 @@ export default function Banner(){
     return(
         <div className="banner">
            <div className="hero-section">
-                <video ref={videoRef} className="video video-bg" loop autoPlay muted={isMuted}>
+                <video ref={videoRef} className="video video-bg" loop muted={isMuted}>
                     <source src={BgVideo} type="video/mp4" />
                 </video>
                 <div className="controls">

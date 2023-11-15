@@ -50,7 +50,7 @@ function MarqueeRap() {
     ];
   return (
     <div className='marquee__rap'>
-        <Marquee>
+        <Marquee direction="right">
             {marqueeImgs.map((marqueeImg, index) => (
                 <figure key={index}>
                     <img src={marqueeImg.image} alt={marqueeImg.alt} />
