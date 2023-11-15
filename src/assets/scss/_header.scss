@@ -1,0 +1,46 @@
+.heading {
+    padding: 23px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    @include mmd{
+        .navbar-toggler {
+            background: #fff;
+            padding: 6px;
+        }
+        .navbar-collapse {
+            background: $black;
+            padding: 25px;
+            & .navbar-nav {
+                & a {
+                    border-bottom: 1px solid #f3f3f321;
+                    padding:15px 0px;
+                }
+            }
+        }
+    }
+    & .navbar-brand{
+        color: $color__3;
+    }
+    & .header-right-area {
+        & ul{
+            & li{
+                & a{
+                    border-radius: 5px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+                    background: rgba(255, 255, 255, 0.10);
+                    backdrop-filter: blur(10px);
+                    display: block;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}
+
