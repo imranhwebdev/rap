@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import Marquee from "react-fast-marquee";
-import BgVideo from '../assets/BgVideo.mp4'
+import BgVideo from '../assets/bgvideo.mp4'
 import banarmarqueeImg1 from '../assets/img/$RAP.png';
 import banarmarqueeImg2 from '../assets/img/$RAP.png';
 import banarmarqueeImg3 from '../assets/img/$RAP.png';
