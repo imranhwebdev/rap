@@ -6,20 +6,7 @@
     width: 100%;
     z-index: 9;
     @include mmd{
-        .navbar-toggler {
-            background: #fff;
-            padding: 6px;
-        }
-        .navbar-collapse {
-            background: $black;
-            padding: 25px;
-            & .navbar-nav {
-                & a {
-                    border-bottom: 1px solid #f3f3f321;
-                    padding:15px 0px;
-                }
-            }
-        }
+       padding-top: 85px;
     }
     & .navbar-brand{
         color: $color__3;
@@ -38,8 +25,16 @@
                     font-weight: 400;
                     padding: 10px 20px;
                     margin-left: 16px;
+                    margin-bottom: 16px;
+                    @include mmd{
+                    padding: 5px 12px;
+                    }
                 }
             }
+        }
+        @include mmd{
+            margin: 0 auto;
+            text-align: center;
         }
     }
 }

@@ -47,6 +47,22 @@ function MarqueeRap() {
             image: BanarmarqueeImg1,
             alt: "Description for the image",
         },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
     ];
   return (
     <div className='marquee__rap'>

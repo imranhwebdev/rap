@@ -71,11 +71,27 @@ export default function Banner(){
             image: BanarmarqueeImg1,
             alt: "Description for the image",
         },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
     ];
     return(
         <div className="banner">
            <div className="hero-section">
-                <video ref={videoRef} className="video video-bg" loop muted={isMuted}>
+                <video ref={videoRef} className="video video-bg" loop autoPlay muted={isMuted}>
                     <source src={BgVideo} type="video/mp4" />
                 </video>
                 <div className="controls">

@@ -2,6 +2,14 @@
     & .footer__social__links {
       padding-top: 75px;
       padding-bottom: 55px;
+      @include mmd{
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+      @include sm{
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
       & li {
         display: inline-block;
         & a {
@@ -17,6 +25,11 @@
           margin: 8px;
           
         }
+      }
+    }
+    & figure{
+      & img{
+        border-radius: 12px;
       }
     }
   }

@@ -53,7 +53,9 @@ function About() {
                     </div>
                 </Col>
                 <Col lg={6}>
-                    <img src={AboutImg} alt="" />
+                    <figure className='about__right__img'>
+                        <img src={AboutImg} alt="" />
+                    </figure>
                 </Col>
             </Row>
             <Row className="chapter__content__inner">

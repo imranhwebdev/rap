@@ -7,11 +7,16 @@ function Gallery() {
     <div className='gallery__area'>
         <Container>
             <Row>
-                <Col md={8}>
-                    <img src={galleryImg1} alt="" />
+                <Col sm={8}>
+                    <figure>
+                        <img src={galleryImg1} alt="" />
+                    </figure>
+                    
                 </Col>
-                <Col md={4}>
-                    <img src={galleryImg2} alt="" />
+                <Col sm={4}>
+                    <figure>
+                        <img src={galleryImg2} alt="" />
+                    </figure>
                 </Col>
             </Row>
         </Container>

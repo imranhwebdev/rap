@@ -15,10 +15,7 @@
 @mixin font-40 {
     font-size: 40px;
     line-height: 160%;
-    @include lg {
-        font-size: 35px;
-    }
-    @include md {
+    @include mmd {
         font-size: 30px;
     }
 }
@@ -40,10 +37,7 @@
 @mixin font-20 {
     font-size: 20px;
     line-height: 160%;
-    @include lg {
-        font-size: 20px;
-    }
-    @include md {
+    @include mmd {
         font-size: 18px;
     }
 }
