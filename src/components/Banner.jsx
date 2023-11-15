@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+import ReactPlayer from 'react-player';
 import Marquee from "react-fast-marquee";
 import BgVideo from '../assets/bgvideo.mp4'
 import BanarmarqueeImg1 from '../assets/img/$RAP.png';
@@ -79,7 +80,7 @@ export default function Banner(){
     return(
         <div className="banner">
            <div className="hero-section">
-                <video ref={videoRef} className="video video-bg" loop autoPlay>
+                <video ref={videoRef} className="video video-bg" loop autoPlay muted={isMuted}>
                     <source src={BgVideo} type="video/mp4" />
                 </video>
                 <div className="controls">
@@ -92,6 +93,7 @@ export default function Banner(){
                     </button>
 
                 </div>
+               
                 <div className="banner__marquee">
                     <Marquee>
                         {marqueeImgs.map((marqueeImg, index) => (
