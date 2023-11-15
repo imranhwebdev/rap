@@ -15,20 +15,20 @@ import banarmarqueeImg9 from '../assets/img/$RAP.png';
 import banarmarqueeImg10 from '../assets/img/$RAP.png';
 import banarmarqueeImg11 from '../assets/img/$RAP.png';
 export default function Banner(){
-    // const [isPlaying, setPlaying] = useState(false);
+    const [isPlaying, setPlaying] = useState(false);
   const [isMuted, setMuted] = useState(false);
   const videoRef = useRef(null);
 
-//   const togglePlayAndMute = () => {
-//     if (videoRef.current) {
-//       if (isPlaying) {
-//         videoRef.current.pause();
-//       } else {
-//         videoRef.current.play();
-//       }
-//       setPlaying(!isPlaying);
-//     }
-//   };
+  const togglePlayAndMute = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setPlaying(!isPlaying);
+    }
+  };
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -38,39 +38,47 @@ export default function Banner(){
   };
 const marqueeImgs = [
     {
+        id:1,
         image:'banarmarqueeImg1',
     },
     {
+        id:2,
         image:'banarmarqueeImg2',
     },
     {
+        id:3,
         image:'banarmarqueeImg3',
     },
     {
+        id:4,
         image:'banarmarqueeImg4',
     },
     {
+        id:5,
         image:'banarmarqueeImg5',
     },
     {
+        id:6,
         image:'banarmarqueeImg6',
     },
     {
+        id:7,
         image:'banarmarqueeImg7',
     },
     {
+        id:8,
         image:'banarmarqueeImg8',
     },
     {
+        id:9,
         image:'banarmarqueeImg9',
     },
     {
-        image:'banarmarqueeImg1',
-    },
-    {
+        id:10,
         image:'banarmarqueeImg10',
     },
     {
+        id:11,
         image:'banarmarqueeImg11',
     }
 ]
@@ -81,13 +89,13 @@ const marqueeImgs = [
                     <source src={BgVideo} type="video/mp4" />
                 </video>
                 <div className="controls">
-                    {/* <button onClick={togglePlayAndMute} className='videoOneOff'>
+                    <button onClick={togglePlayAndMute} className='videoOneOff'>
                     {isPlaying ? (
                         <FontAwesomeIcon icon={faPlay} />
                     ) : (
                         <FontAwesomeIcon icon={faPause} />
                     )}
-                    </button> */}
+                    </button>
                     <button onClick={toggleMute} className='soundOneOff'>
                     {isMuted ? (
                         <FontAwesomeIcon icon={faVolumeMute} />
@@ -99,9 +107,9 @@ const marqueeImgs = [
                 </div>
                 <div className="banner__marquee">
                     <Marquee>
-                        {marqueeImgs.map((image, i)=>(
-                            <figure>
-                                <img src={banarmarqueeImg1} alt="" />
+                        {marqueeImgs.map((image, index)=>(
+                            <figure key={index}>
+                                <img src={image} alt="" />
                             </figure>
                         ))}
                     </Marquee>
