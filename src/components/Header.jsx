@@ -6,7 +6,7 @@ export default function Header(){
     const headerSocials = [
         {
             socialText:'Etherscan',
-            socialLink:'google.com'
+            socialLink:'https://etherscan.io/token/0x6B7F3bA9e8506f2cf187f828AD0B6dFA8208fd75'
         },
         {
             socialText:'Dex Tools',
@@ -14,15 +14,15 @@ export default function Header(){
         },
         {
             socialText:'Use "Buy $RAP"',
-            socialLink:'google.com'
+            socialLink:'https://app.uniswap.org/tokens/ethereum/NATIVE?inputCurrency=0x6B7F3bA9e8506f2cf187f828AD0B6dFA8208fd75'
         },
         {
             socialText:'Telegram',
-            socialLink:'google.com'
+            socialLink:'https://t.me/rapcoineth'
         },
         {
             socialText:'Twitter',
-            socialLink:'google.com'
+            socialLink:'https://twitter.com/rapcoineth'
         },
     ]
     return(
