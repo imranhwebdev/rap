@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import galleryImg1 from '../assets/img/gallery-img1.jpg'
-import galleryImg2 from '../assets/img/gallery-img2.jpg'
+import galleryImg2 from '../assets/img/gallery-img12.jpg'
 function Gallery() {
   return (
     <div className='gallery__area'>

@@ -3,17 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import Marquee from "react-fast-marquee";
 import BgVideo from '../assets/bgvideo.mp4'
-import banarmarqueeImg1 from '../assets/img/$RAP.png';
-import banarmarqueeImg2 from '../assets/img/$RAP.png';
-import banarmarqueeImg3 from '../assets/img/$RAP.png';
-import banarmarqueeImg4 from '../assets/img/$RAP.png';
-import banarmarqueeImg5 from '../assets/img/$RAP.png';
-import banarmarqueeImg6 from '../assets/img/$RAP.png';
-import banarmarqueeImg7 from '../assets/img/$RAP.png';
-import banarmarqueeImg8 from '../assets/img/$RAP.png';
-import banarmarqueeImg9 from '../assets/img/$RAP.png';
-import banarmarqueeImg10 from '../assets/img/$RAP.png';
-import banarmarqueeImg11 from '../assets/img/$RAP.png';
+import BanarmarqueeImg1 from '../assets/img/$RAP.png';
 export default function Banner(){
     const [isPlaying, setPlaying] = useState(false);
   const [isMuted, setMuted] = useState(false);
@@ -36,52 +26,52 @@ export default function Banner(){
       setMuted(!isMuted);
     }
   };
-const marqueeImgs = [
-    {
-        id:1,
-        image:'banarmarqueeImg1',
-    },
-    {
-        id:2,
-        image:'banarmarqueeImg2',
-    },
-    {
-        id:3,
-        image:'banarmarqueeImg3',
-    },
-    {
-        id:4,
-        image:'banarmarqueeImg4',
-    },
-    {
-        id:5,
-        image:'banarmarqueeImg5',
-    },
-    {
-        id:6,
-        image:'banarmarqueeImg6',
-    },
-    {
-        id:7,
-        image:'banarmarqueeImg7',
-    },
-    {
-        id:8,
-        image:'banarmarqueeImg8',
-    },
-    {
-        id:9,
-        image:'banarmarqueeImg9',
-    },
-    {
-        id:10,
-        image:'banarmarqueeImg10',
-    },
-    {
-        id:11,
-        image:'banarmarqueeImg11',
-    }
-]
+    const marqueeImgs = [
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+        {
+            image: BanarmarqueeImg1,
+            alt: "Description for the image",
+        },
+    ];
     return(
         <div className="banner">
            <div className="hero-section">
@@ -91,9 +81,9 @@ const marqueeImgs = [
                 <div className="controls">
                     <button onClick={togglePlayAndMute} className='videoOneOff'>
                     {isPlaying ? (
-                        <FontAwesomeIcon icon={faPlay} />
-                    ) : (
                         <FontAwesomeIcon icon={faPause} />
+                    ) : (
+                        <FontAwesomeIcon icon={faPlay} />
                     )}
                     </button>
                     <button onClick={toggleMute} className='soundOneOff'>
@@ -107,9 +97,9 @@ const marqueeImgs = [
                 </div>
                 <div className="banner__marquee">
                     <Marquee>
-                        {marqueeImgs.map((image, index)=>(
+                        {marqueeImgs.map((marqueeImg, index) => (
                             <figure key={index}>
-                                <img src={image} alt="" />
+                                <img src={marqueeImg.image} alt={marqueeImg.alt} />
                             </figure>
                         ))}
                     </Marquee>
